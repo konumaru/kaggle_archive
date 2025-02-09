@@ -1,0 +1,4 @@
+export PYTHONPATH=/opt/conda/bin/python
+
+export KAGGLE_USERNAME=konumaru
+export KAGGLE_KEY=

@@ -1,0 +1,32 @@
+hydra:
+  run:
+    dir: ./data/.hydra
+  output_subdir: null
+
+seed: 42
+n_splits: 5
+debug: False
+is_eval: True
+
+path:
+  raw: ./data/raw
+  preprocessing: ./data/preprocessing
+  feature: ./data/feature
+  train: ./data/train
+  ensemble: ./data/ensemble
+  external: ./data/external
+  upload: ./data/upload
+
+target_name: utility_agent1
+fold_name: fold
+feature_names:
+  - numeric_feature
+  - agent_parsed_feature
+  - is_raw
+  # - te_agents
+  # - text_embeddings
+  # - parsed_lud_rules
+
+defaults:
+  - _self_
+  - model: lgbm

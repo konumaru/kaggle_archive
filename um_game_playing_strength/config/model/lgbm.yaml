@@ -1,0 +1,17 @@
+name: lgbm
+
+params:
+  importance_type: gain
+  boosting_type: gbdt
+  objective: regression
+  force_col_wise: True
+  n_estimators: 2000
+  metric: rmse
+  colsample_bytree: 0.5015828186215919
+  learning_rate: 0.046797426083490114
+  max_depth: 11
+  min_child_samples: 192
+  num_leaves: 201
+  reg_alpha: 2.456088457025178
+  reg_lambda: 0.0723275659942304
+  subsample: 0.9715401271647578

@@ -1,0 +1,13 @@
+name: cat
+
+params:
+  task_type: GPU
+  loss_function: RMSE
+  iterations: 2979
+  learning_rate: 0.026093623304651172
+  bagging_temperature: 0.32105624997614
+  max_depth: 11
+  l2_leaf_reg: 1.207224144365719
+  min_data_in_leaf: 33
+  random_strength: 3.4643061759728013
+  one_hot_max_size: 8

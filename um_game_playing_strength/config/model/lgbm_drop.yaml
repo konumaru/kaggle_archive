@@ -1,0 +1,16 @@
+name: lgbm_drop
+
+params:
+  boosting_type: gbdt
+  objective: regression
+  metric: rmse
+  learning_rate: 0.08
+  n_estimators: 2000
+  force_col_wise: True
+  max_depth: 10
+  num_leaves: 91
+  subsample: 0.6345311388901841
+  colsample_bytree: 0.9525095774401744
+  reg_alpha: 0.8899982043598492
+  reg_lambda: 2.6067145979723456
+

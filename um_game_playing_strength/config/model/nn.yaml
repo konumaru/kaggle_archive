@@ -1,0 +1,5 @@
+name: nn
+
+params:
+  trainer:
+    max_epochs: 100
