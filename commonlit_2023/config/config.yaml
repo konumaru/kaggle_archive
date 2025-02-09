@@ -1,0 +1,21 @@
+hydra:
+  run:
+    dir: ./data/.hydra
+  output_subdir: null
+
+seed: 42
+n_splits: 4
+debug: False
+is_eval: True
+
+path:
+  raw: ./data/raw
+  preprocessed: ./data/preprocessed
+  feature: ./data/feature
+  model: ./data/model
+  train: ./data/train
+  external: ./data/external
+
+defaults:
+  - _self_
+  - model: xgb

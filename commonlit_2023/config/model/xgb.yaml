@@ -1,0 +1,14 @@
+name: xgb
+
+params:
+  booster: gbtree
+  gpu_id: 0
+  tree_method: gpu_hist
+  objective: reg:squarederror
+  eval_metric: rmse
+  learning_rate: 0.02
+  n_estimators: 800
+  max_depth: 4
+  early_stopping_rounds: 50
+  subsample: 0.8
+  colsample_bytree: 1.0
