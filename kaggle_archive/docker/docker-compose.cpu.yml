@@ -1,0 +1,11 @@
+services:
+  kaggle_env_um_gaming:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    env_file:
+      - ../.envrc
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    tty: true

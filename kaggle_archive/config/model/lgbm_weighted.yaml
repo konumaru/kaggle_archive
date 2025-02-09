@@ -1,0 +1,15 @@
+name: lgbm_weighted
+
+params:
+  boosting_type: gbdt
+  objective: huber
+  metric: rmse
+  n_estimators: 2000
+  force_col_wise: True
+  learning_rate: 0.04643168775908485
+  max_depth: 10
+  num_leaves: 89
+  subsample: 0.6587081446671406
+  colsample_bytree: 0.6518460613653843
+  reg_alpha: 0.8914424186249543
+  reg_lambda: 6.855102248578276

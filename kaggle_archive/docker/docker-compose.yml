@@ -1,0 +1,18 @@
+services:
+  kaggle_env_um_gaming:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ../.envrc
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]

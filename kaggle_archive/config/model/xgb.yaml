@@ -1,0 +1,15 @@
+name: xgb
+
+params:
+  booster: gbtree
+  device: cuda
+  tree_method: hist
+  eval_metric: rmse
+  objective: reg:squarederror
+  n_estimators: 2000
+  learning_rate: 0.05371331906637426
+  min_child_weight: 25
+  subsample: 0.8426195622051738
+  colsample_bytree: 0.633335295150139
+  alpha: 7.6724558386943515
+  lambda: 59.672969431918446
