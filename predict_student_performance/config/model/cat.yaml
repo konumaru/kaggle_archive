@@ -1,0 +1,10 @@
+name: cat
+
+params:
+  loss_function: Logloss
+  iterations: 500
+  learning_rate: 0.05
+  use_best_model: True
+  max_depth: 5
+  task_type: GPU
+  verbose: 50
