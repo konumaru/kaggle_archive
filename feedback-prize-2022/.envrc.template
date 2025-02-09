@@ -1,0 +1,4 @@
+export KAGGLE_USERNAME=
+export KAGGLE_KEY=
+
+export TOKENIZERS_PARALLELISM=true
