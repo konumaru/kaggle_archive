@@ -1,0 +1,66 @@
+{
+  "name": "kaggle-container",
+  "service": "kaggle_env_um_gaming",
+  "dockerComposeFile": [
+    "../docker/docker-compose.yml"
+  ],
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "IronGeek.vscode-env",
+        "GitHub.copilot",
+        "christian-kohler.path-intellisense",
+        "ms-toolsai.jupyter",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        "njpwerner.autodocstring",
+        "ms-vscode.makefile-tools",
+        "ms-azuretools.vscode-docker",
+        "ms-toolsai.datawrangler"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        // Python
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "[python]": {
+          "editor.tabSize": 4,
+          "editor.insertSpaces": true,
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+          "editor.formatOnType": true,
+          "editor.rulers": [
+            79
+          ]
+        },
+        "python.languageServer": "Pylance",
+        "python.analysis.extraPaths": [
+          "./src"
+        ],
+        // Markdown
+        "[markdown]": {
+          "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+          "editor.tabSize": 2,
+          "editor.wordWrap": "wordWrapColumn",
+          "editor.wordWrapColumn": 79,
+          "editor.rulers": [
+            79
+          ]
+        },
+        "markdownlint.config": {
+          "MD033": false,
+          "MD024": false,
+          "MD041": false
+        }
+      }
+    }
+  }
+}
