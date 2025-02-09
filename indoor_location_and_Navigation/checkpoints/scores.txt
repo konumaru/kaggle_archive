@@ -1,0 +1,33 @@
+         CV-GroupKFold10    0 43.6703
+ CV-GroupShuffleSplit0.2    0 44.9002
+
+          CV-GroupKfold5    0 59.7506
+          CV-GroupKfold5    1 43.6573
+          CV-GroupKfold5    2 45.1865
+          CV-GroupKfold5    3 43.9427
+          CV-GroupKfold5    4 44.3865
+          CV-GroupKfold5    5 43.8045
+        AddFeature-floor    0 24.5123
+        AddFeature-floor    1 24.2258
+
+       AddFeature-onehot    0 nan
+       AddFeature-onehot    0 30.2395
+             Change-ReLU    0 27.4116
+            Change-PReLU    0 32.6679
+             Change-SELU    0 34.5701
+
+                Baseline    1 33.7474
+                Baseline    2 18.8223
+    AddFeature-wifi_freq    0 37.0850
+    AddFeature-wifi_freq    1 19.2875
+    AddFeature-wifi_freq    2 19.9605
+       AddFeature-Beacon    0 nan
+       AddFeature-Beacon    0 20.0631
+       AddFeature-Beacon    1 21.1233
+         AddFeature_Acce    0 nan
+         AddFeature_Acce    0 19.9652
+         AddFeature_Acce    1 20.1576
+         AddFeature_Acce    1 nan
+       AddFeature_Sensor    0 nan
+       AddFeature_Sensor    0 19.3119
+       AddFeature_Sensor    1 18.4846
